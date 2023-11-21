@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" th:href="@{/css/test.css}">
+    <style>
+        .tdiv {
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div id="test" class="tdiv test" style="color: red;">
+        test
+    </div>
+
+    <div id="test2" class="tdiv test">
+        test
+    </div>
+
+    <div id="test3" class="tdiv test">
+        test
+    </div>
 </body>
 </html>
